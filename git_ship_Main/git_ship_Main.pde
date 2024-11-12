@@ -8,7 +8,7 @@ String copilot = "";
 boolean viewscreen = true; //powers up main viewscreen
 boolean displays = true; //powers up left and right cockpit displays
 boolean attitudeControl = true;
-boolean artificialGravity = true;
+boolean artificialGravity = false;
 boolean sensors = true; //turns on sensors
 boolean parkingBrake = false;
 boolean shields = true; //turns on shields
@@ -120,13 +120,13 @@ void init(){
 
 void dropOutOfWarp(){
   speed = 0.00;
-  float rndX = 150; // 150 to 450
-  float rndY = 140; // 100, 200
+  float rndX = 393; // 150 to 450
+  float rndY = 124; // 100, 200
   x = map(rndX, 0.25*width, 0.75*width, 0, 10);
   y = map(rndY, 0.25*height, 0.5*height, 0, 10);
   earth = new Planet(rndX, rndY, random(50, 375));
   earth.sliders();
-  location = "Planet Name";
+  location = "New Toronto VI";
 }
 
 void noSignal(){
