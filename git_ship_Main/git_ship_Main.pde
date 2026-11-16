@@ -6,9 +6,9 @@ String copilot = "";
 
 //spacecraft controls
 boolean viewscreen = true; //powers up main viewscreen
-boolean displays = true; //powers up left and right cockpit displays
-boolean attitudeControl = true;
-boolean artificialGravity = true;
+boolean displays = false; //powers up left and right cockpit displays
+boolean attitudeControl = false;
+boolean artificialGravity = false;
 boolean sensors = true; //turns on sensors
 boolean parkingBrake = false;
 boolean shields = true; //turns on shields
